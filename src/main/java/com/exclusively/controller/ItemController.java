@@ -47,7 +47,7 @@ public class ItemController {
 		return new ResponseEntity(HttpStatus.CREATED).getStatusCode().toString();
 	}
 	@RequestMapping(value="/removeItem/userId/{userid}/itemId/{itemid}")
-	public String RemoveCartItem(@PathVariable String userid,@PathVariable String itemid)
+	public String removeCartItem(@PathVariable String userid,@PathVariable String itemid)
 	{
 		status = userItemService.removeitem(userid, itemid);
 		return status;
