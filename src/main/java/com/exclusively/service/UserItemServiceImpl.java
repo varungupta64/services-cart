@@ -9,6 +9,7 @@ import com.couchbase.client.protocol.views.ComplexKey;
 import com.couchbase.client.protocol.views.Query;
 import com.exclusively.entity.Item;
 //import com.exclusively.repository.UserItemRepository;
+import com.exclusively.repositories.UserItemRepository;
 
 @Service("UserItemService")
 public class UserItemServiceImpl implements UserItemService {
@@ -51,7 +52,7 @@ public class UserItemServiceImpl implements UserItemService {
 		Query query = new Query();
 		query.setKey(ComplexKey.of(idArr));
 		//System.out.println(useritemrepository.findByUserIdAndItemId(query));
-		useritemrepository.delete(useritemrepository.findByUserIdAndItemId(query));
+		useritemrepository.delete(useritemrepository.findByUserId(query));
 		return "Success";
 		}
 		catch(Exception e)

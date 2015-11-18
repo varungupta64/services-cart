@@ -1,4 +1,4 @@
-package com.exclusively.service;
+package com.exclusively.repositories;
 
 import java.util.List;
 
@@ -9,5 +9,6 @@ import com.exclusively.entity.Item;
 
 public interface UserItemRepository extends CrudRepository<Item,String>{
 	List <Item> findCartByUserId(Query query);
-	List <Item> findByUserIdAndItemId(Query query);
+	List <Item> findByUserId(Query query);
+	
 }
