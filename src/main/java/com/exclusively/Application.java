@@ -16,7 +16,7 @@ import com.exclusively.config.CartConfig;
 @EnableAutoConfiguration
 @Import(CartConfig.class)
 @SpringBootApplication
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 public class Application 
 {
 	

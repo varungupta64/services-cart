@@ -29,7 +29,7 @@
 
 		<!-- Test -->
 		<junit.version>4.11</junit.version>
-		
+
 		<!-- <start-class>com.exclusively.service.OmsService</start-class> -->
 
 	</properties>
@@ -49,7 +49,7 @@
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-couchbase</artifactId>
-			<version>1.0.0.RC1</version>
+
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
