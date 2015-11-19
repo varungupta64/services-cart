@@ -3,12 +3,17 @@ package com.exclusively.config;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.couchbase.config.AbstractCouchbaseConfiguration;
 import org.springframework.data.couchbase.repository.config.EnableCouchbaseRepositories;
 
+import com.exclusively.controller.CartController;
+import com.exclusively.service.CartService;
+import com.exclusively.service.CartServiceImpl;
+
 @Configuration
-@EnableCouchbaseRepositories(basePackages = {"com.exclusively.service"})
+@EnableCouchbaseRepositories(basePackages = {"com.exclusively.repositories"})
 public class CartConfig extends AbstractCouchbaseConfiguration {
 
 	@Override
@@ -19,13 +24,12 @@ public class CartConfig extends AbstractCouchbaseConfiguration {
 
 	@Override
 	protected String getBucketName() {
-		// TODO Auto-generated method stub
-		return "cart";
+		return "asdf";
 	}
 
 	@Override
 	protected String getBucketPassword() {
-		// TODO Auto-generated method stub
 		return "";
 	}
+	
 }

@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.exclusively.entity.Cart;
-import com.exclusively.repositories.UserCartRepository;
+import com.exclusively.repositories.CartRepository;
 
 @Service("CartService")
 public class CartServiceImpl implements CartService {
 
 	@Autowired
-	UserCartRepository userCartRepository;
+	CartRepository userCartRepository;
 
 
 

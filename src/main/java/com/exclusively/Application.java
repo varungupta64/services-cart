@@ -17,7 +17,6 @@ import com.exclusively.config.CartConfig;
 @Import(CartConfig.class)
 @SpringBootApplication
 @EnableDiscoveryClient
-@EntityScan("com.exclusively.entity")
 public class Application 
 {
 	
@@ -25,4 +24,5 @@ public class Application
 	{
 		SpringApplication.run(Application.class, args);
 	}
+	
 }
